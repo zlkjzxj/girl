@@ -1,0 +1,15 @@
+Index: src/main/java/com/walle/girl/aspect/HttpAspect.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/com/walle/girl/aspect/HttpAspect.java	(revision )
++++ src/main/java/com/walle/girl/aspect/HttpAspect.java	(revision )
+@@ -57,6 +57,6 @@
+     }
+     @AfterReturning(returning = "object",pointcut = "log()")
+     public void doAfterReturning(Object object){
+-        logger.info("response={}",object);
++        logger.info("response={}",object.toString());
+     }
+ }
