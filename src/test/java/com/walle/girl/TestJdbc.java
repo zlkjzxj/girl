@@ -6,7 +6,7 @@ public class TestJdbc {
     public static void main(String[] args) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbgirl","root","root");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://119.29.115.175:3306/girl","root","1234qwerQWER!@#$");
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("select * from girl");
             while(resultSet.next()){

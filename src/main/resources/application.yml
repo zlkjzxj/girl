@@ -4,8 +4,8 @@ server:
 #dataSource
 spring:
   datasource:
-    url: "jdbc:mysql://localhost:3306/dbgirl"
+    url: "jdbc:mysql://119.29.115.175:3306/girl"
     driver-class-name: "com.mysql.jdbc.Driver"
     username: "root"
-    password: "root"
+    password: "1234qwerQWER!@#$"
 #mybatis
