@@ -31,12 +31,12 @@ public class GirlAction {
      * @return
      */
     @PostMapping("insertAGirl")
-    public void insertAGirl(@RequestParam("name") String name, @RequestParam("cupSize") String cupSize,@RequestParam("age") int age){
+    public Girl insertAGirl(@RequestParam("name") String name, @RequestParam("cupSize") String cupSize,@RequestParam("age") int age){
         Girl girl = new Girl();
         girl.setName(name);
         girl.setCupSize(cupSize);
         girl.setAge(age);
-        girlMapper.insertAGirl(girl);
+        return girlMapper.insertAGirl(girl);
     }
     /**
      *  查询一个女生

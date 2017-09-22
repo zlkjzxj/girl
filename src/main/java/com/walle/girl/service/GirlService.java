@@ -1,6 +1,8 @@
 package com.walle.girl.service;
 
 import com.walle.girl.entity.Girl;
+import com.walle.girl.enums.ResultEnum;
+import com.walle.girl.exception.MyException;
 import com.walle.girl.mapper.GirlMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -32,5 +34,22 @@ public class GirlService {
         girlB.setCupSize("D");
         girlB.setAge(28);
         girlMapper.insertAGirl(girlB);
+    }
+
+    public void getAge(int id) throws Exception {
+        Girl girl = girlMapper.findGirl(id);
+        if (girl != null){
+
+            int age = girl.getAge();
+            if(age<10){
+                throw new MyException(ResultEnum.PRIMARY_SCHOOL);
+            }else if(age >10 && age<16 ){
+                throw new MyException(ResultEnum.MIDDLE_SCHOOL);
+            }else{
+                throw new MyException(ResultEnum.SUCCESS);
+            }
+        }else {
+            throw new MyException(ResultEnum.NO_BODY);
+        }
     }
 }
