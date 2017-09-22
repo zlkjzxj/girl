@@ -1,0 +1,32 @@
+{
+  "groups": [{
+    "name": "girl",
+    "type": "com.walle.girl.entity.GirlProPerites",
+    "sourceType": "com.walle.girl.entity.GirlProPerites"
+  }],
+  "properties": [
+    {
+      "name": "girl.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.walle.girl.entity.GirlProPerites",
+      "defaultValue": 0
+    },
+    {
+      "name": "girl.cup-size",
+      "type": "java.lang.String",
+      "sourceType": "com.walle.girl.entity.GirlProPerites"
+    },
+    {
+      "name": "girl.id",
+      "type": "java.lang.Integer",
+      "sourceType": "com.walle.girl.entity.GirlProPerites",
+      "defaultValue": 0
+    },
+    {
+      "name": "girl.name",
+      "type": "java.lang.String",
+      "sourceType": "com.walle.girl.entity.GirlProPerites"
+    }
+  ],
+  "hints": []
+}
