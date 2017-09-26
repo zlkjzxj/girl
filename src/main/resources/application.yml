@@ -8,4 +8,12 @@ spring:
     driver-class-name: "com.mysql.jdbc.Driver"
     username: "root"
     password: "1234qwerQWER!@#$"
+
+#页面前缀后缀
+  mvc:
+    view:
+      prefix: /WEB-INF/pages/
+      suffix: .jsp
+
 #mybatis
+
